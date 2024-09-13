@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.text.isDigitsOnly
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,38 +25,42 @@ class MainActivity : AppCompatActivity() {
         display = findViewById(R.id.textViewdisplay)
         clear = findViewById(R.id.buttonclear)
 
-        //onclick button
+        // Onclick button for generating history
+        generate.setOnClickListener {
+            val inputText = input.text.toString()
 
-        generate.setOnClickListener{
-            var age = 95
+            // Check if input is a number
+            if (inputText.isDigitsOnly()) {
+                val age = inputText.toInt()
 
-            display.text = when(age)
-            {
-
-                36-> "LadyDiana  and Marilyn monrose was 36 when she died"
-               78-> "WMahatma Gandhi died at age of 78"
-                48-> "Whitney Houston died at age 48"
-                30-> "Steve Biko died at age of 30"
-                52-> "William Shakespeare died at age of 52"
-                57-> "Ruth First died at age of 57"
-                50-> "Micheal Jackson died at age of 50"
-                54 -> "Osama Bin Laden died at 54"
-                40 -> "John Lennon died at 40"
-                95-> "You are 95 years old. Which is the same age as Nelson mandela. Nelson mandela was a famous historical figure"
-                else -> "There is no historical figure known to be around this years old"
-            }
-                    println(display)
-            }
-
-            //Clear button
-
-            clear.setOnClickListener{
-                input.text.clear()
-                display.text= ""
+                display.text = when (age) {
+                    36 -> "Lady Diana and Marilyn Monroe were 36 when they died"
+                    78 -> "Mahatma Gandhi died at age 78"
+                    48 -> "Whitney Houston died at age 48"
+                    30 -> "Steve Biko died at age 30"
+                    52 -> "William Shakespeare died at age 52"
+                    57 -> "Ruth First died at age 57"
+                    50 -> "Michael Jackson died at age 50"
+                    54 -> "Osama Bin Laden died at 54"
+                    40 -> "John Lennon died at 40"
+                    95 -> "You are 95 years old, the same age as Nelson Mandela when he died."
+                    else -> "There is no historical figure known to be around this age."
+                }
+            } else {
+                // Display an error message if the input is not a number
+                Toast.makeText(this, "Please enter a valid number", Toast.LENGTH_SHORT).show()
             }
         }
 
+        //Clear button
+
+        clear.setOnClickListener{
+            input.text.clear()
+            display.text= ""
+        }
     }
+
+}
 
 
 
