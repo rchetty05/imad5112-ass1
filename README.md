@@ -45,3 +45,6 @@ Like any project, this one came with its challenges, but they provided valuable 
 By doing this assignment and developing this history-based age comparison app was a rewarding journey that blended my interests in history and technology. By using Kotlin and GitHub for version control, I successfully created an interactive tool that allows users to connect their personal milestones with the lives of famous historical figures. The challenges I faced, such as ensuring valid input and historical accuracy, were overcome through careful design and iteration.
 This project demonstrated the potential for mobile applications to make learning history engaging and personal. By offering users a chance to reflect on the lives of notable figures in relation to their own age, the app helps make history more relatable and interesting. It’s a small but significant step in using technology to preserve and teach history in a way that resonates with today’s fast-paced, digital world.
 
+Please find my application link below to view my video
+
+https://www.youtube.com/watch?v=EXUIRasPiec
