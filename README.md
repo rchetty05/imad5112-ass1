@@ -16,7 +16,8 @@ An age input field.
 A button labeled "Generate History" that would compare the inputted age to historical figures.
 A "Clear" button to reset the form and allow new entries.
 Error handling mechanisms to ensure valid input (numerical only).
-The aim was to keep the design minimalistic and functional, avoiding any unnecessary complexity, while focusing on delivering accurate historical comparisons.
+The aim was to keep the design minimalistic and functional, avoiding any unnecessary complexity, while focusing on delivering accurate historical comparisons. 
+
 
 3. Development Process
 
@@ -73,3 +74,6 @@ The development of the history age comparison Android application was both a tec
 The challenges faced, such as ensuring valid input and delivering accurate historical data, were met through careful design, testing, and iteration. The final product is a user-friendly app that simplifies learning about history while offering a unique perspective on the lives of influential figures.
 
 This project demonstrates the potential of mobile applications in making educational content both accessible and interesting. By creating personal connections with historical data, users are encouraged to reflect on the passage of time and the contributions of those who came before them. This app serves as a small but significant step in using technology to preserve and teach history in a format suited to today’s fast-paced, digital world.
+
+
+
